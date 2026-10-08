@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(216, 202, 202);
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: aliceblue;
+   
+}
+
+.nav{
+    background-color: #000;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+}
+
+.nav h1 {
+    color: white;
+}
+
+.nav h1 span {
+    color: rgb(199, 171, 14);
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.nav ul li a {
+    color: rgb(216, 202, 202);
+    padding: 10px;
+    font-size: 18px;
+    position: relative;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+/* Hover على الرابط */
+.nav ul li a:hover {
+    color: gold;
+}
+
+/* الخط الذهبي */
+.nav ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: gold;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.3s;
+}
+
+/* ظهور الخط عند Hover */
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+.idea{
+    margin-top:0px;
+    width: 100%;
+    height: 600px;
+    background-color: #363434;
+    padding-top: 100px;
+ position: relative;
+}
+.idea #e1{
+    color: gold;
+    position: absolute;
+    right: 40px;
+    bottom:300px;
+}
+.idea h1{
+    position: absolute;
+    right: 40px;
+    bottom:250px ;
+    color: azure;
+}
+.idea h1 span{
+    color: gold;
+}
+.idea p{
+    position: absolute;
+    right: 40px;
+    bottom: 210px;
+    color: rgb(253, 253, 252);
+    font-size: 17px;
+}
+.idea #ide{
+    position: absolute;
+    bottom: 165px;
+    right: 40px;
+    background-color: gold;
+    color: rgb(12, 12, 12);
+    border-radius: 10px;
+    padding: 5.0px 17px;
+    font-size: 16.5px;
+    transition: 0.5s;
+
+}
+.idea #ide:hover{
+    background-color: #080808;
+    color: #fffefe;
+
+}
+.idea a{
+    position: absolute;
+    bottom: 165px;
+    right: 130px;
+    border: 1px solid rgb(238, 186, 17);
+    background-color: transparent;
+    padding: 5.0px 7px;
+    border-radius: 10px;
+    font-size: 16.5px;
+    transition: 0.5s;
+}
+.idea a:hover{
+    
+    border: none;
+    background-color: black;
+    color: bisque;
+    
+}
+
+
+ .box{
+    position: relative;
+     width: 100%;
+    padding: 150px;
+    margin: auto;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+.box .background-box{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-image: url(copilot_20261002_110709.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 10px rgb(124, 124, 124);
+    padding: 100px 0;
+  
+   
+}
+.box .background-box #welcome{
+    position: absolute;
+    top: 60px;
+    right: 45%;
+   
+    color: #fff;
+    font-size: 30px;
+    color: rgb(182, 165, 71);
+  font-size: 25px;
+}
+
+.box .background-box h1{
+    position: absolute;
+    top: 90px;
+    right: 40%;
+    
+    
+    color: #fff;
+    font-size: 30px;
+}
+.box .background-box p{
+    position: absolute;
+    top: 140px;
+    right: 35%;
+  
+    color: #fff;
+    font-size: 20px;
+}
+.box .background-box button{
+    position: absolute;
+    top: 190px;
+    right: 44.8%;
+    
+    background-color: rgb(252, 226, 79);
+    color: #000;
+    border-radius: 10px;
+    padding: 5.0px 17px;
+    font-size: 16.5px;
+    transition: 0.5s;
+}
+.box .background-box button:hover{
+    background-color: #080808;
+    color: #fffefe;
+}
+.box .know{
+    width: 100%;
+   position: absolute;
+    top: 350px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+  align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #fdfcfc;
+       padding: 10px;
+}
+.box .know p{
+    color: #f5e069;
+    font-size: 25px;
+}
+.box .know h2{
+    color: #2c2b25;
+    transition: 0.5s;
+    text-decoration: underline;
+    text-decoration-color: rgb(241, 223, 121); /* لون الخط */
+  text-decoration-thickness: 3px;   /* سمك الخط */
+  text-underline-offset: 5px;       /* المسافة بين الخط والكلمة */
+}
+.box .know .line{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 34px;
+    margin-top: 30px;
+    padding: 40px;
+    background-color: #fdfcfc;
+    display: flex;
+    justify-content: center;
+    
+}
+.box .know .line div{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+box-shadow: 10px 10px 10px rgb(124, 124, 124);
+}
+.box .know .line div:hover{
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+.box .know .line div h3{
+    color: #292727;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.box .know .line div p{
+    color: #8b8383;
+    font-size: 15px;
+    text-align: center;
+}
+
+.box .know2{
+    width: 100%;
+   position: absolute;
+    top: 650px;
+    color: #fcfbfb;
+    font-size: 20px;
+    display: flex;
+  align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #fdf7f7;
+    padding: 40px;
+  
+}
+.box .know2 p{
+    color: #f5e069;
+    font-size: 25px;
+}
+.box .know2 h2{
+    color: #2c2b25;
+    transition: 0.5s;
+    text-decoration: underline;
+    text-decoration-color: rgb(241, 223, 121); /* لون الخط */
+  text-decoration-thickness: 3px;   /* سمك الخط */
+  text-underline-offset: 5px;       /* المسافة بين الخط والكلمة */
+}
+.box .know2 .line2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 34px;
+    margin-top: 30px;
+    padding: 40px;
+   
+    display: flex;
+    justify-content: center;
+    
+}
+.box .know2 .line2 div{
+    
+    border-radius: 20px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgb(124, 124, 124);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.box .know2 .line2 div:hover{
+    transform: translateY(-20px);
+    box-shadow: 10px 10px 20px rgb(124, 124, 124);
+}
+
+.box .know2 .line2 div h3{
+    color: #292727;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.box .know2 .line2 div p{
+    color: #8b8383;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+.contact{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px ;
+    justify-content: space-around;
+    margin-top: 710px;
+    background-color: #fff;
+  
+}
+
+.contact iframe{
+    width: 450px;
+    height: 550px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px rgb(124, 124, 124);
+    
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   width: 450px;
+    height: 550px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px  10px rgb(124, 124, 124);
+    padding: 10px;
+   
+}
+.contact form #h1{
+    color: #080808;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: 900;
+   
+}
+.contact label{
+    display: flex;
+    justify-content: flex-end;
+    color: #1b1a1a;
+    font-size: 18px;
+    padding:5px 0 ;
+}
+.contact form input{
+    margin-bottom: 23px;
+    padding: 14px;
+    font-size: 18px;
+    width: 90%;
+  
+}
+.contact form textarea{
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    width: 90%;
+   
+}
+.contact form button{
+    color: #ffff;
+    background-color: black;
+    padding: 12px;
+    border-radius: 10px;
+    width: 90%;
+font-size: 16px;
+transition: 0.4s;
+}
+.contact form button:hover{
+    background-color: goldenrod;
+    color: #000;}
+    footer{
+        width: 100%;
+        height: 200px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer p{
+        color: #fff;
+        font-size: 18px;
+    }
+    footer a{
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        flex-direction: row;
+        transition: 0.5s;
+    }
+    footer a:hover{
+        color: gold;
+    }
+    footer h2{
+        color: #fff;
+        font-size: 25px;
+    }
+    footer h2 span{
+        color: gold;}
+        /* الموبايل */
+
+/* الموبايل */
+@media(max-width: 768px) {
+    /* النافبار */
+    .nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav ul {
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* قسم الفكرة (idea) */
+    .idea {
+        height: 500px;
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .idea #e1,
+    .idea h1,
+    .idea p,
+    .idea a,
+    .idea #ide {
+        position: static;   /* نشيل الـ absolute */
+        margin: 10px auto;
+        display: block;
+        
+    }
+    .idea a, .idea #ide {
+        width: 80%;
+    }
+
+    /* البوكس */
+    .box {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+.box .background-box{
+      position: sticky;          /* مش لازم absolute */
+    width: 106%;                 /* ياخد عرض الشاشة كله */
+    background-image: url(copilot_20261002_110709.png);
+  background-size: cover;        /* الصورة تغطي العنصر بالكامل */
+    background-position: center; /* الصورة في النص */
+    background-repeat: no-repeat;/* تمنع التكرار */
+    display: flex;               /* علشان نوسّط المحتوى */
+    flex-direction: column;
+    justify-content: center;     /* في النص عموديًا */
+    align-items: center;         /* في النص أفقيًا */
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+    
+    .box .background-box #welcome,
+    .box .background-box h1,
+    .box .background-box p,
+    .box .background-box button {
+        position: static;
+        margin: 10px auto;
+    }
+
+    /* من نحن */
+    .box .know {
+        position: static;
+        margin-top: 20px;
+    }
+    .box .know .line {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box .know .line div {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    /* خدماتنا */
+    .box .know2 {
+        position: static;
+        margin-top: 20px;
+    }
+    .box .know2 .line2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box .know2 .line2 div {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    /* تواصل معنا */
+    .contact {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    .contact iframe,
+    .contact form {
+        width: 100%;
+        margin: 10px 0;
+        height: auto;
+    }
+    .contact iframe{
+        height: 400px;
+    }
+
+    /* الفوتر */
+    footer {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+    footer a {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
